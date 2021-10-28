@@ -33,6 +33,14 @@ async function run() {
             const services = await cursor.toArray();
             res.send(services);
         })
+             
+        app.get('/hellow',(req,res)=>{
+            res.send('hellow hy')
+        })
+
+
+
+
         //Get a single service
         app.get('/services/:id', async (req, res) => {
             const id = req.params.id;
