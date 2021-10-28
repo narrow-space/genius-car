@@ -34,7 +34,7 @@ async function run() {
             res.send(services);
         })
              
-        app.get('/hellow',(req,res)=>{
+        app.get('/hlw',(req,res)=>{
             res.send('hellow hy i am imran')
         })
 
