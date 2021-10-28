@@ -31,7 +31,7 @@ async function run() {
         app.get('/services', async (req, res) => {
             const cursor = servicesCollection.find({});
             const services = await cursor.toArray();
-            res.send(services)
+            res.send(services);
         })
         //Get a single service
         app.get('/services/:id', async (req, res) => {
